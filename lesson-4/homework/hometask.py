@@ -1,5 +1,9 @@
 #1 Write a Python script to sort (ascending and descending) a dictionary by value.
-
+my_dict = {'a': 3, 'b': 1, 'c': 2}
+asc = dict(sorted(my_dict.items(), key=lambda x: x[1]))
+print(asc)
+desc = dict(sorted(my_dict.items(), key=lambda x: x[1], reverse=True))
+print(desc)
 
 #2 Write a Python script to add a key to a dictionary.
 dic = {
